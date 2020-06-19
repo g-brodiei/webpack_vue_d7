@@ -1,0 +1,5 @@
+name = webpack_vue_example
+description = Demo using webpack to mount vue instance on your drupal site.
+version = "7.x-0.1"
+core = "7.x"
+project = "custom"

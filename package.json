@@ -1,0 +1,44 @@
+{
+  "name": "webpack_vue_drupal",
+  "description": "webpack_vue_instance",
+  "version": "1.0.0",
+  "author": "g-brodiei <chunjuichen@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --production --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "start": "webpack --watch",
+    "start:dev": "webpack --watch --mode development"
+  },
+  "dependencies": {
+    "vue": "^2.5.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^1.1.4",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
