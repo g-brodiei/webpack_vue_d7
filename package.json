@@ -7,9 +7,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --production --config webpack.config.js",
-    "build:dev": "webpack --config webpack.config.js --mode development",
-    "start": "webpack --watch",
-    "start:dev": "webpack --watch --mode development"
+    "start": "webpack --watch --mode development"
   },
   "dependencies": {
     "vue": "^2.5.11"

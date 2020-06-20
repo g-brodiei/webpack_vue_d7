@@ -94,7 +94,7 @@ module.exports = (env, argv) => {
       plugins: [
         new webpack.DefinePlugin({
           'process.env': {
-            'NODE_ENV': JSON.stringify('production')
+            'NODE_ENV': isDevMode ? JSON.stringify('development') : JSON.stringify('production')
           }
         }),
         new VueLoaderPlugin(),

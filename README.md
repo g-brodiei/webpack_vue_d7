@@ -2,24 +2,40 @@
 
 > webpack_vue_example
 
+This is a setup for Drupal 7 modules implementing VueJS utilising webpack 4.
+
+With proper modification, this may be implemented to Drupal 8 as well.
+
+Prerequisite knowledge of webpack, VueJS and how to utilise Drupal API (e.g. drupal_add_js, drupal_add_css ) is highly recommended prior using this custom module.
+
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:3000 using BrowserSync
+npm run start
 
 # build for production with minification
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Change BrowserSync Settings
+
+BrowserSync proxy url and port in <i>"webpack.config.js"</i> of this root folder should be changed to fit the site you're serving.
+
+``` js
+new BrowserSyncPlugin({
+  host: 'localhost',
+  port: 3000,
+  proxy: "https://sitename.example/"
+})
+```
 
 ## Mount Vue Instance.
 
-modify the "el" tag in main.js file accordingly to your id tag where you want to mount your Vue instances.
+Modify the "el" tag in main.js file accordingly to match the id tag where to mount your Vue instances in the templates.
 
 ``` html
 <!-- Your custom Drupal templates -->
